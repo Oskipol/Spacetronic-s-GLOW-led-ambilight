@@ -16,6 +16,7 @@ sudo usermod -aG dialout $USER
 LOG OUT and log back in (or reboot)
 
 3. Start
+   
 python3 zielony.py
 
 # Arch:
@@ -34,4 +35,5 @@ sudo usermod -aG uucp $USER
 LOG OUT and log back in (or reboot)
 
 3. Start
+   
 python3 zielony.py
