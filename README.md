@@ -1,5 +1,6 @@
 # Ubuntu:
-# 1. System dependencies
+1. System dependencies
+   
 sudo apt update
 sudo apt install -y \
   python3 python3-pip python3-venv \
@@ -10,6 +11,7 @@ sudo apt install -y \
   python3-gi python3-dbus python3-numpy python3-serial
 
 2. Add yourself to the dialout group (access to /dev/ttyUSB0)
+   
 sudo usermod -aG dialout $USER
 LOG OUT and log back in (or reboot)
 
@@ -18,6 +20,7 @@ python3 zielony.py
 
 # Arch:
 1. System dependencies
+   
 sudo pacman -S --needed \
   python python-pip \
   gstreamer gst-plugins-base gst-plugins-good \
@@ -26,6 +29,7 @@ sudo pacman -S --needed \
   python-gobject python-dbus python-numpy python-pyserial
 
 2. Add yourself to the uucp group (Arch uses uucp instead of dialout)
+   
 sudo usermod -aG uucp $USER
 LOG OUT and log back in (or reboot)
 
