@@ -1,5 +1,4 @@
-# Spacetronic-s-GLOW-led-ambilight
-Ubuntu:
+#Ubuntu:
 # 1. System dependencies
 sudo apt update
 sudo apt install -y \
@@ -10,15 +9,15 @@ sudo apt install -y \
   xdg-desktop-portal xdg-desktop-portal-gnome \
   python3-gi python3-dbus python3-numpy python3-serial
 
-# 2. Add yourself to the dialout group (access to /dev/ttyUSB0)
+2. Add yourself to the dialout group (access to /dev/ttyUSB0)
 sudo usermod -aG dialout $USER
-# LOG OUT and log back in (or reboot)
+LOG OUT and log back in (or reboot)
 
-# 3. Start
+3. Start
 python3 zielony.py
 
-Arch:
-# 1. System dependencies
+#Arch:
+1. System dependencies
 sudo pacman -S --needed \
   python python-pip \
   gstreamer gst-plugins-base gst-plugins-good \
@@ -26,9 +25,9 @@ sudo pacman -S --needed \
   xdg-desktop-portal xdg-desktop-portal-gnome \
   python-gobject python-dbus python-numpy python-pyserial
 
-# 2. Add yourself to the uucp group (Arch uses uucp instead of dialout)
+2. Add yourself to the uucp group (Arch uses uucp instead of dialout)
 sudo usermod -aG uucp $USER
-# WYLOGUJ SIĘ i zaloguj ponownie
+LOG OUT and log back in (or reboot)
 
-# 3. Start
+3. Start
 python3 zielony.py
