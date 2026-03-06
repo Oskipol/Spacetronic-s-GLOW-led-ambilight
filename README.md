@@ -1,4 +1,4 @@
-#Ubuntu:
+# Ubuntu:
 # 1. System dependencies
 sudo apt update
 sudo apt install -y \
@@ -16,7 +16,7 @@ LOG OUT and log back in (or reboot)
 3. Start
 python3 zielony.py
 
-#Arch:
+# Arch:
 1. System dependencies
 sudo pacman -S --needed \
   python python-pip \
